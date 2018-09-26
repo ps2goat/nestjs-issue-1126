@@ -1,0 +1,23 @@
+{
+  "name": "nest-js-error-swallowing-sample",
+  "version": "1.0.0",
+  "description": "example of how nestjs is swallowing error thrown in async providers",
+  "main": "main.ts",
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:watch": "nodemon --legacy-watch --watch ./dist --inspect-brk=9008 --nolazy dist/main.js",
+    "build": "tsc",
+    "build:watch": "npm run build -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^5.3.9",
+    "@nestjs/core": "^5.3.10",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.3",
+    "typescript": "^3.0.3"
+  }
+}
