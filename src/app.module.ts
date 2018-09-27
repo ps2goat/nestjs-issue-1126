@@ -5,7 +5,7 @@ import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
     providers: [
         {
             provide: Object,
-            useFactory: async () => doSomething()
+            useFactory: async () => await doSomething()
         }
     ]
 })
